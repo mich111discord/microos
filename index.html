@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Linux MicroOS - Nowoczesny System Operacyjny</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+  :root {
+    --primary-color: #2f80ed;
+    --secondary-color: #56ccf2;
+    --background-color: #f9fafb;
+    --text-color: #222222;
+    --accent-color: #27ae60;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  header p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main {
+    max-width: 960px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  section h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    border-bottom: 3px solid var(--primary-color);
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding-bottom: 0.25rem;
+  }
+
+  ul.features-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul.features-list li {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+  }
+
+  ul.features-list li svg {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    margin-right: 1rem;
+    fill: var(--accent-color);
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+  }
+
+  .cta-button:hover,
+  .cta-button:focus {
+    background-color: #219150;
+    box-shadow: 0 8px 20px rgba(33, 145, 80, 0.7);
+    outline: none;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #666666;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    section h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Linux MicroOS</h1>
+  <p>Nowoczesny, bezpieczny i stabilny system operacyjny oparty na Linuksie MicroOS – idealny dla entuzjastów, twórców i profesjonalistów.</p>
+</header>
+<main>
+  <section id="about">
+    <h2>O systemie</h2>
+    <p>Linux MicroOS to lekki i niezawodny system operacyjny zoptymalizowany pod kątem stabilności i automatycznych aktualizacji. Bazujący na technologii MicroOS, zapewnia nowoczesne doświadczenie użytkownika z pełnym bezpieczeństwem i kontrolą nad systemem.</p>
+  </section>
+  <section id="features">
+    <h2>Funkcje</h2>
+    <ul class="features-list">
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 16.17l-3.88-3.88-1.41 1.41L9 19 20.59 7.41 19.17 6z"/></svg>
+        Automatyczne, atomowe aktualizacje – system zawsze aktualny i bezpieczny.
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 16.17l-3.88-3.88-1.41 1.41L9 19 20.59 7.41 19.17 6z"/></svg>
+        Stabilne środowisko dzięki zasadzie niezmienności jądra i systemu plików.
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 16.17l-3.88-3.88-1.41 1.41L9 19 20.59 7.41 19.17 6z"/></svg>
+        Minimalistyczne, ale potężne narzędzia dla deweloperów i administratorów.
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 16.17l-3.88-3.88-1.41 1.41L9 19 20.59 7.41 19.17 6z"/></svg>
+        Doskonałe wsparcie dla kontenerów i wirtualizacji.
+      </li>
+    </ul>
+  </section>
+  <section id="download">
+    <h2>Pobierz i zacznij</h2>
+    <p>Dołącz do rosnącej społeczności użytkowników Linux MicroOS. Pobierz system i zacznij korzystać z nowoczesnego, niezawodnego środowiska już dziś!</p>
+    <a href="https://microos.example.com/download" target="_blank" rel="noopener" class="cta-button" aria-label="Pobierz Linux MicroOS">Pobierz Linux MicroOS</a>
+  </section>
+</main>
+<footer>
+  &copy; 2024 Linux MicroOS Polska. Wszystkie prawa zastrzeżone.
+</footer>
+</body>
+</html>
+
