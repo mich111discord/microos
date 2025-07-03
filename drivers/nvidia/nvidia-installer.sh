@@ -6,7 +6,7 @@ echo "2. Polski"
 read -p "Choose your language / Wybierz język [1-2]: " lang
 
 if [ "$lang" == "1" ]; then
-  echo "=== NVIDIA Driver Installer ==="
+  echo "=== NVIDIA Driver Installer For MicroOS ==="
   echo "Choose the driver to install:"
   echo "1. NVIDIA legacy (340.x)"
   echo "2. NVIDIA standard (470.x)"
@@ -33,7 +33,7 @@ if [ "$lang" == "1" ]; then
   esac
 
 elif [ "$lang" == "2" ]; then
-  echo "=== Instalator sterowników NVIDIA ==="
+  echo "=== Instalator sterowników NVIDIA Dla MicroOS ==="
   echo "Wybierz sterownik:"
   echo "1. NVIDIA legacy (340.x)"
   echo "2. NVIDIA standard (470.x)"
